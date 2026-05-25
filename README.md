@@ -24,14 +24,14 @@ If your vault is on iCloud Drive (e.g., `~/Library/Mobile Documents/iCloud~md~ob
 
 ```bash
 # Clone to a temporary location
-git clone https://github.com/yourusername/obsidian-turf-gold-theme.git /tmp/obsidian-turf-gold-theme
+git clone https://github.com/norizou1968/turf-gold-obsidian-theme.git /tmp/turf-gold-obsidian-theme
 
 # Copy to your vault
-cp -r /tmp/obsidian-turf-gold-theme/Turf\ Gold \
+cp -r /tmp/turf-gold-obsidian-theme/Turf\ Gold \
   ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/.obsidian/themes/
 
 # Clean up
-rm -rf /tmp/obsidian-turf-gold-theme
+rm -rf /tmp/turf-gold-obsidian-theme
 ```
 
 ### Global Installation (All Vaults)
@@ -40,7 +40,7 @@ To use this theme across all your vaults:
 
 ```bash
 # Copy to Obsidian's global themes directory
-cp -r /path/to/obsidian-turf-gold-theme/Turf\ Gold \
+cp -r /path/to/turf-gold-obsidian-theme/Turf\ Gold \
   ~/Library/Application\ Support/obsidian/themes/
 
 # Create symbolic links in each vault
@@ -102,7 +102,7 @@ MIT License — feel free to use, modify, and distribute as you see fit.
 
 ## Author
 
-[norihito](https://github.com/norihito)
+[norizou1968](https://github.com/norizou1968)
 
 ## Credits
 
