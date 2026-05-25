@@ -279,10 +279,34 @@ pre[class*="language-"] {
   border: 1px solid var(--background-modifier-border);
 }
 
-/* Status bar */
+/* Status bar — centered floating style like Things 3 */
 .status-bar {
+  left: 50%;
+  transform: translatex(-50%);
+  bottom: 8px;
+  width: fit-content;
+  max-width: min(60rem, 90vw);
+  gap: 10px;
+  border-radius: 18px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   font-family: var(--font-monospace-theme);
   font-size: 0.75rem;
+  padding: 6px 16px;
+  transition: transform 0.2s ease-out;
+}
+
+/* Adjust position when sidebars are open */
+body:has(.workspace.is-left-sidedock-open) .status-bar {
+  transform: translateX(calc(-50% + (var(--left-sidebar-width, 250px) / 2)));
+}
+
+body:has(.workspace.is-right-sidedock-open) .status-bar {
+  transform: translateX(calc(-50% - (var(--right-sidebar-width, 320px) / 2)));
+}
+
+body:has(.workspace.is-left-sidedock-open):has(.workspace.is-right-sidedock-open) .status-bar {
+  transform: translateX(calc(-50% + (var(--left-sidebar-width, 250px) / 2) - (var(--right-sidebar-width, 320px) / 2)));
 }
 
 /* Prompt / Modal */
