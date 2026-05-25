@@ -24,7 +24,7 @@ If your vault is on iCloud Drive (e.g., `~/Library/Mobile Documents/iCloud~md~ob
 
 ```bash
 # Clone to a temporary location
-git clone https://github.com/norizou1968/turf-gold-obsidian-theme.git /tmp/turf-gold-obsidian-theme
+git clone https://github.com/norizou/turf-gold-obsidian-theme.git /tmp/turf-gold-obsidian-theme
 
 # Copy to your vault
 cp -r /tmp/turf-gold-obsidian-theme/Turf\ Gold \
@@ -102,7 +102,7 @@ MIT License — feel free to use, modify, and distribute as you see fit.
 
 ## Author
 
-[norizou1968](https://github.com/norizou1968)
+[norizou](https://github.com/norizou)
 
 ## Credits
 
