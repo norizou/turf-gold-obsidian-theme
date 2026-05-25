@@ -1,0 +1,292 @@
+/* ───────────────────────────────────────────
+   Turf Gold — Obsidian Theme
+   Based on: 優駿牝馬 2026 回顧録 colour palette
+   Author:   norihito
+   ─────────────────────────────────────────── */
+
+/* ─── Base / Common ─── */
+body {
+  --font-interface-theme: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Yu Gothic", "Meiryo", sans-serif;
+  --font-text-theme: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Yu Gothic", "Meiryo", sans-serif;
+  --font-monospace-theme: "SF Mono", "Menlo", "Consolas", "Courier New",
+    monospace;
+
+  /* Palette references (always available for snippets) */
+  --turf: #0a1d15;
+  --turf2: #0e2519;
+  --turf3: #123022;
+  --paper: #f3eddd;
+  --paper2: #e7dcc4;
+  --ink: #181a14;
+  --mute: #8aa093;
+  --mute2: #5f7468;
+  --gold: #c6a04e;
+  --gold-soft: #e6cd8a;
+  --gold-deep: #9a7a32;
+  --win: #3aa978;
+  --win-soft: #7fd6ab;
+  --loss: #d8505f;
+  --amber: #dca23f;
+  --line: rgba(198, 160, 78, 0.22);
+}
+
+/* ─── Dark Mode ─── */
+.theme-dark {
+  /* Foundations */
+  --background-primary: var(--turf);
+  --background-primary-alt: var(--turf2);
+  --background-secondary: var(--turf2);
+  --background-secondary-alt: var(--turf3);
+  --background-modifier-border: var(--line);
+  --background-modifier-border-hover: rgba(198, 160, 78, 0.35);
+  --background-modifier-border-focus: rgba(198, 160, 78, 0.5);
+  --background-modifier-form-field: var(--turf2);
+  --background-modifier-form-field-highlighted: var(--turf3);
+  --background-modifier-success: rgba(58, 169, 120, 0.15);
+  --background-modifier-error: rgba(216, 80, 95, 0.15);
+  --background-modifier-error-hover: rgba(216, 80, 95, 0.25);
+  --background-modifier-cover: rgba(10, 29, 21, 0.8);
+
+  /* Text */
+  --text-normal: var(--paper);
+  --text-muted: var(--mute);
+  --text-faint: var(--mute2);
+  --text-on-accent: var(--turf);
+  --text-error: var(--loss);
+  --text-success: var(--win-soft);
+  --text-selection: rgba(198, 160, 78, 0.25);
+  --text-highlight-bg: rgba(220, 162, 63, 0.3);
+
+  /* Interactive / Accent */
+  --interactive-accent: var(--gold);
+  --interactive-accent-hover: var(--gold-soft);
+  --interactive-normal: var(--turf2);
+  --interactive-hover: var(--turf3);
+  --interactive-success: var(--win);
+  --interactive-warning: var(--amber);
+  --interactive-error: var(--loss);
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(198, 160, 78, 0.2);
+  --scrollbar-active-thumb-bg: rgba(198, 160, 78, 0.4);
+
+  /* Ribbon / Sidebar / Titlebar */
+  --ribbon-background: var(--turf2);
+  --ribbon-background-hover: var(--turf3);
+  --sidebar-background: var(--turf2);
+  --sidebar-text: var(--paper);
+  --sidebar-text-active: var(--gold-soft);
+  --titlebar-background: var(--turf);
+  --titlebar-background-focused: var(--turf2);
+  --titlebar-text: var(--mute);
+  --titlebar-text-focused: var(--paper);
+
+  /* Dividers / Tabs */
+  --divider-color: var(--line);
+  --divider-color-hover: rgba(198, 160, 78, 0.4);
+  --tab-background: var(--turf2);
+  --tab-background-active: var(--turf);
+  --tab-text: var(--mute);
+  --tab-text-active: var(--gold-soft);
+  --tab-text-hover: var(--paper);
+  --tab-outline-color: var(--line);
+
+  /* Code */
+  --code-background: var(--turf2);
+  --code-normal: var(--paper);
+  --code-comment: var(--mute);
+
+  /* Blockquote */
+  --blockquote-background: transparent;
+  --blockquote-border: var(--gold);
+
+  /* Callouts */
+  --callout-default: var(--turf3);
+  --callout-info: rgba(58, 169, 120, 0.12);
+  --callout-warning: rgba(220, 162, 63, 0.12);
+  --callout-error: rgba(216, 80, 95, 0.12);
+  --callout-success: rgba(58, 169, 120, 0.12);
+
+  /* Mermaid */
+  --mermaid-node: var(--turf3);
+  --mermaid-node-alt: var(--turf2);
+  --mermaid-edge: var(--mute);
+  --mermaid-arrow: var(--gold);
+
+  /* Tables */
+  --table-header-background: var(--turf3);
+  --table-row-even-background: transparent;
+  --table-row-odd-background: rgba(198, 160, 78, 0.05);
+  --table-border-color: var(--line);
+}
+
+/* ─── Light Mode (Bright Green) ─── */
+.theme-light {
+  /* Foundations */
+  --background-primary: #eaf0ec;
+  --background-primary-alt: #e0eae2;
+  --background-secondary: #e0eae2;
+  --background-secondary-alt: #f4f8f5;
+  --background-modifier-border: rgba(198, 160, 78, 0.3);
+  --background-modifier-border-hover: rgba(198, 160, 78, 0.45);
+  --background-modifier-border-focus: rgba(198, 160, 78, 0.6);
+  --background-modifier-form-field: #e0eae2;
+  --background-modifier-form-field-highlighted: #f4f8f5;
+  --background-modifier-success: rgba(58, 169, 120, 0.12);
+  --background-modifier-error: rgba(216, 80, 95, 0.1);
+  --background-modifier-error-hover: rgba(216, 80, 95, 0.2);
+  --background-modifier-cover: rgba(10, 29, 21, 0.75);
+
+  /* Text */
+  --text-normal: #142b18;
+  --text-muted: var(--mute2);
+  --text-faint: var(--mute);
+  --text-on-accent: #eaf0ec;
+  --text-error: var(--loss);
+  --text-success: #2e8a63;
+  --text-selection: rgba(58, 169, 120, 0.22);
+  --text-highlight-bg: rgba(220, 162, 63, 0.25);
+
+  /* Interactive / Accent */
+  --interactive-accent: var(--gold-deep);
+  --interactive-accent-hover: var(--gold);
+  --interactive-normal: #e0eae2;
+  --interactive-hover: #f4f8f5;
+  --interactive-success: var(--win);
+  --interactive-warning: var(--amber);
+  --interactive-error: var(--loss);
+
+  /* Scrollbar */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: rgba(198, 160, 78, 0.25);
+  --scrollbar-active-thumb-bg: rgba(198, 160, 78, 0.45);
+
+  /* Ribbon / Sidebar / Titlebar */
+  --ribbon-background: #e0eae2;
+  --ribbon-background-hover: #f4f8f5;
+  --sidebar-background: #e0eae2;
+  --sidebar-text: #142b18;
+  --sidebar-text-active: var(--gold-deep);
+  --titlebar-background: #eaf0ec;
+  --titlebar-background-focused: #e0eae2;
+  --titlebar-text: var(--mute2);
+  --titlebar-text-focused: #142b18;
+
+  /* Dividers / Tabs */
+  --divider-color: rgba(198, 160, 78, 0.3);
+  --divider-color-hover: rgba(198, 160, 78, 0.45);
+  --tab-background: #e0eae2;
+  --tab-background-active: #eaf0ec;
+  --tab-text: var(--mute2);
+  --tab-text-active: var(--gold-deep);
+  --tab-text-hover: #142b18;
+  --tab-outline-color: rgba(198, 160, 78, 0.3);
+
+  /* Code */
+  --code-background: #e0eae2;
+  --code-normal: #142b18;
+  --code-comment: var(--mute);
+
+  /* Blockquote */
+  --blockquote-background: transparent;
+  --blockquote-border: var(--gold-deep);
+
+  /* Callouts */
+  --callout-default: #f4f8f5;
+  --callout-info: rgba(58, 169, 120, 0.1);
+  --callout-warning: rgba(220, 162, 63, 0.1);
+  --callout-error: rgba(216, 80, 95, 0.1);
+  --callout-success: rgba(58, 169, 120, 0.1);
+
+  /* Mermaid */
+  --mermaid-node: #e0eae2;
+  --mermaid-node-alt: #eaf0ec;
+  --mermaid-edge: var(--mute2);
+  --mermaid-arrow: var(--gold-deep);
+
+  /* Tables */
+  --table-header-background: #e0eae2;
+  --table-row-even-background: transparent;
+  --table-row-odd-background: rgba(58, 169, 120, 0.05);
+  --table-border-color: rgba(198, 160, 78, 0.3);
+}
+
+/* ─── Extras ─── */
+
+/* Headings — Obsidian defaults, no font-family override */
+.markdown-rendered h1,
+.markdown-rendered h2,
+.markdown-rendered h3,
+.markdown-rendered h4,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.HyperMD-header {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Selection colour */
+::selection {
+  background: var(--text-selection);
+}
+
+/* Links */
+.external-link,
+.markdown-rendered a.external-link {
+  color: var(--interactive-accent);
+  text-decoration-color: var(--interactive-accent);
+}
+.external-link:hover,
+.markdown-rendered a.external-link:hover {
+  color: var(--interactive-accent-hover);
+}
+
+/* Tags */
+.tag,
+a.tag {
+  background-color: var(--background-secondary-alt);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-normal);
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 4px;
+}
+
+/* Tables */
+.markdown-rendered th {
+  font-family: var(--font-monospace-theme);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.78em;
+  color: var(--gold);
+}
+
+/* Horizontal rule */
+.markdown-rendered hr {
+  border: none;
+  border-top: 1px solid var(--line);
+}
+
+/* Canvas cards */
+.canvas-node-container {
+  border: 1px solid var(--background-modifier-border);
+}
+
+/* Status bar */
+.status-bar {
+  font-family: var(--font-monospace-theme);
+  font-size: 0.75rem;
+}
+
+/* Prompt / Modal */
+.prompt,
+.modal {
+  border: 1px solid var(--background-modifier-border);
+}
