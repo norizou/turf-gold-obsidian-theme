@@ -92,10 +92,6 @@ ln -s ~/Library/Application\ Support/obsidian/themes/Turf\ Gold \
 }
 ```
 
-## インスピレーション
-
-このテーマは「優駿牝馬 2026 回顧録」の可視化カラーパレットにインスパイアされています。ターフグリーンとゴールドアクセントで競馬データを表現しています。
-
 ## ライセンス
 
 MIT License — 自由に使用、変更、配布できます。
@@ -104,7 +100,3 @@ MIT License — 自由に使用、変更、配布できます。
 
 [norizou](https://github.com/norizou)
 
-## クレジット
-
-- [Obsidian Theme Development Guide](https://github.com/obsidianmd/obsidian-developer-docs/blob/master/en/Themes/App%20themes/Build%20a%20theme.md) に従って構築
-- カラーパレットは競馬データ可視化にインスパイアされています

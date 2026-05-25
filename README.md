@@ -92,10 +92,6 @@ This theme uses CSS variables for easy customization. You can override colors in
 }
 ```
 
-## Inspiration
-
-This theme is inspired by the color palette from the "優駿牝馬 2026 回顧録" (Yushun Himba 2026 Review) visualization, which uses turf greens and gold accents to represent horse racing data.
-
 ## License
 
 MIT License — feel free to use, modify, and distribute as you see fit.
@@ -104,7 +100,3 @@ MIT License — feel free to use, modify, and distribute as you see fit.
 
 [norizou](https://github.com/norizou)
 
-## Credits
-
-- Built following the [Obsidian Theme Development Guide](https://github.com/obsidianmd/obsidian-developer-docs/blob/master/en/Themes/App%20themes/Build%20a%20theme.md)
-- Color palette inspired by horse racing data visualization
